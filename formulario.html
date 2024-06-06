@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking</title>
+</head>
+<body>
+    <h1>¿Qué deseas hacer?</h1><br>
+
+    
+    <form method="post" action="aparcar.php">
+
+        <h2>APARCAR COCHE</h2>
+        <input type="radio" name="tipo" value="grande" > Coche grande
+        <input type="radio" name="tipo" value="pequeno" > Coche pequeño
+        <input type="submit" value="Enviar">
+        <br>
+      
+    </form>
+
+
+
+    <form method="post" action="retirar_coche.php">
+
+        <h2>RETIRAR COCHE</h2><br>
+        <input type="radio" name="tipo" value="grande" > Coche pequeño
+        <input type="radio" name="tipo" value="pequeno"> Coche grande
+        <input type="text" name="numero"  placeholder="Número de plaza" >
+        <input type="submit" value="Enviar">
+        <br>
+      
+    </form>
+
+    <form method="post" action="visualizar.php"><br>
+
+        <h2>VISUALIZAR EL ESTADO DEL PARQUING</h2><br>
+        
+        <input type="submit" value="Ver">
+        <br>
+      
+    </form>
+    <br>
+    <a href="logout.php">Cerrar la sesión</a>
+
+
+
+</body>
+</html>
